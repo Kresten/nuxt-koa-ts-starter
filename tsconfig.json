@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "./dist/out-tsc",
+    "lib": ["esnext", "esnext.asynciterable", "dom"],
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "strict": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"]
+    },
+    "types": ["@types/jest", "@types/node", "@nuxt/types", "@nuxtjs/axios", "@nuxtjs/vuetify"]
+  },
+  "exclude": ["node_modules"]
+}
